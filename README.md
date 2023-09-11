@@ -15,63 +15,71 @@ The second component of the application excels in web scraping, extracting real-
 Together, these two parts offer a comprehensive solution for financial asset analysis and portfolio management, providing users with a powerful toolset to make data-driven investment choices.
 
 ## Project Overview
-- Backtesting Engine: The application leverages a provided dataset (date, asset, price, EBIT/EV, ROE) to create and manage portfolios. It calculates rankings using the fundamental indicators and selects the top assets to form a portfolio.
+- **Backtesting Engine:** The application leverages a provided dataset (date, asset, price, EBIT/EV, ROE) to create and manage portfolios. It calculates rankings using the fundamental indicators and selects the top assets to form a portfolio.
 
-- Web Scraping: A web scraping module fetches data from the website fundamentus.com daily. This data is used to generate a ranking of assets, which aids in portfolio creation.
+- **Web Scraping:** A web scraping module fetches data from the website fundamentus.com daily. This data is used to generate a ranking of assets, which aids in portfolio creation.
 
-- User Authentication: Users can create accounts, log in, and maintain sessions to access the app's features securely.
+- **User Authentication:** Users can create accounts, log in, and maintain sessions to access the app's features securely.
 
-- Database Integration: The application integrates with a SQL database to store user data, portfolios, and other relevant information.
+- **Database Integration:** The application integrates with a SQL database to store user data, portfolios, and other relevant information.
 
-- Data Visualization: The app includes interactive data visualization elements such as time-series line graphs, tables displaying ranking results, and a doughnut chart representing the portfolio's assets.
+- **Data Visualization:** The app includes interactive data visualization elements such as time-series line graphs, tables displaying ranking results, and a doughnut chart representing the portfolio's assets.
 
 ## Usage
 
-To use the Financial Asset Portfolio Backtester:
+To run the Financial Portfolio Backtester locally, follow these steps:
 
-1. Clone the Repository: Clone this GitHub repository to your local machine.
+1. **Clone the Repository:** Clone this GitHub repository to your local machine.
 
-git clone https://github.com/your-username/financial-portfolio-backtester.git
+git clone https://github.com/yourusername/financial-portfolio-backtester.git
 
-2. Set Up the Environment: Install the required dependencies and configure the database connection.
+2. **Set Up the Environment:** Install the required dependencies and configure the database connection.
 
-3. Run the Application: Start the app.py Flask application, and access it through a web browser.
+3. **Run the Application:** Start the Flask application, and access it through a web browser.
 
-4. User Registration: Create a user account to access the backtesting and ranking features.
+python app.py
 
-5. Perform Backtests: Use the app to perform backtests on stocks, generate portfolios, and analyze results.
+4. **Access the application:** Through your web browser at http://localhost:5000.
+
+5. **User Registration:** Create a user account to access the backtesting and ranking features.
+
+6. **Perform Backtests:** Use the app to perform backtests on stocks, generate portfolios, and analyze results.
+
+7. **Real-Time Ranking:** Create a real-time portfolio every month based on a ranking system.
 
 ## Technologies Used
-- Frontend: HTML, CSS, JavaScript, Bootstrap
-- Backend: Python, Flask
-- Database: SQL (configured with Flask-SQLAlchemy)
-- Data Visualization: Chart.js
-- Web Scraping: BeautifulSoup
-- User Authentication: Flask-Login
-- Version Control: Git and GitHub
+- **Frontend:** HTML, CSS, JavaScript, Bootstrap
+- **Backend:** Python, Flask
+- **Database:** SQL (configured with Flask-SQLAlchemy)
+- **Data Visualization:** Chart.js
+- **Web Scraping:** BeautifulSoup
+- **User Authentication:** Flask-Login
+- **Version Control:** Git and GitHub
 
 ## Project Structure
 
 The project is structured as follows:
 
-- app.py: The main Flask application file.
-- templates/: HTML templates for rendering web pages.
-- static/: Static assets (CSS, JavaScript, images).
-- models.py: Defines the database models using SQLAlchemy.
-- routes.py: Contains the application routes and view functions.
-- forms.py: Defines forms for user registration and login.
-- scraper.py: Web scraping module to collect financial data.
-- charts.py: Contains functions for plotting charts using Chart.js.
-- config.py: Configuration settings for the application.
+- **app.py:** The main Flask application file. Contains the application routes and requests.
+- **templates/:** HTML templates for rendering web pages.
+- **templates/index.html:** Defines forms for user registration and login.
+- **templates/dashboard.html:** Create the dashboard page, containing a sidebar navigation, parameters form, buttons, charts, and table.
+- **static/:** Static assets (CSS, JavaScript, images).
+
+- **CriandoUmModeloDeInvestimento.py:** Performs backtesting of a monthly generated stock portfolio based on financial indicators and ranking system.
+- **PegarSitesEmSitesAutomatizarCarteira.py:** Web scraping module to collect financial data and create a ranking.
+- **database.sqlite:** Defines the user database using SQL-Lite.
+- **tabela.pickle:** Stores the fundamentus.com data.
+
 
 
 ## Data Sources
 
 The application uses two primary data sources:
 
-1. Varos Dataset: A dataset provided by Varos containing fundamental financial indicators such as EBIT/EV and ROE for various financial assets.
+1. **Varos Dataset:** A dataset provided by Varos containing fundamental financial indicators such as EBIT/EV and ROE for various financial assets.
    
-2. Fundamentus Web Scraping: Daily web scraping of financial data from Fundamentus to obtain real-time information on assets.
+2. **Fundamentus Web Scraping:** Daily web scraping of financial data from Fundamentus to obtain real-time information on assets.
 
 ### Disclaimer:
 
@@ -83,9 +91,9 @@ Contributions to the Financial Asset Portfolio Backtester project are welcome! Y
 
 ## Acknowledgments
 
-This project was inspired by a bootcamp provided by Varos, a YouTube channel, which included the dataset and code to get started.
+* This project was inspired by a bootcamp provided by Varos, a YouTube channel, which included the dataset and code to get started.
 
-This project was made possible with the assistance of ChatGPT 3.5, which provided valuable guidance, generated code snippets, and offered helpful tips during the development process. We are grateful for the support and insights provided by this AI-powered model. Additionally, this README was created with the assistance of ChatGPT to provide comprehensive project documentation.
+* This project was made possible with the assistance of ChatGPT 3.5, which provided valuable guidance, generated code snippets, and offered helpful tips during the development process. We are grateful for the support and insights provided by this AI-powered model. Additionally, this README was created with the assistance of ChatGPT to provide comprehensive project documentation.
 
 
 ## License

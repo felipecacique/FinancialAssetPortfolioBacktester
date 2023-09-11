@@ -6,9 +6,13 @@ This project encompasses two core functionalities:
 
 ### Part 1 - Financial Asset Backtesting:
 
-This component of the application empowers users to perform backtests on financial assets. The backtesting simulation revolves around a dynamically updated monthly portfolio. This portfolio is meticulously constructed based on a ranking system driven by fundamental indicators sourced from a dataset generously provided by Varos. As a powerful feature, it generates performance graphs comparing the model's performance against the Ibovespa (IBOV) index over the past seven years. This part enables users to gain insights into the historical performance of their portfolios in real-world scenarios.
+<img src="https://github.com/felipecacique/PortfolioBacktester/blob/main/img/backtest-page.png" />
+
+This component of the application empowers users to perform backtests on financial assets. The backtesting simulation revolves around a dynamically updated monthly portfolio. This portfolio is meticulously constructed based on a ranking system driven by fundamental indicators sourced from a dataset generously provided by [Varos](https://www.youtube.com/@varos-programacao). As a powerful feature, it generates performance graphs comparing the model's performance against the Ibovespa (IBOV) index over the past seven years. This part enables users to gain insights into the historical performance of their portfolios in real-world scenarios.
 
 ### Part 2 - Real-Time Data Acquisition and Ranking:
+
+<img src="https://github.com/felipecacique/PortfolioBacktester/blob/main/img/ranking-page.png" />
 
 The second component of the application excels in web scraping, extracting real-time financial data from fundamentus.com on a daily basis. Leveraging this timely data, the backend of the application dynamically generates a ranking system. This ranking system is then elegantly presented in a table format, showcasing the best assets to consider for investment. The criteria used in this ranking system are defined in Part 1. The top-ranked assets serve as the building blocks of the user's portfolio. Should the user desire to create new portfolios on a monthly basis, Part 2 equips them with the essential data and insights needed to make informed investment decisions.
 
@@ -18,9 +22,11 @@ Together, these two parts offer a comprehensive solution for financial asset ana
 
 - **Backtesting Engine:** The application leverages a provided dataset (date, asset, price, EBIT/EV, ROE) to create and manage portfolios. It calculates rankings using the fundamental indicators and selects the top assets to form a portfolio.
 
-- **Web Scraping:** A web scraping module fetches data from the website fundamentus.com daily. This data is used to generate a ranking of assets, which aids in portfolio creation.
+- **Web Scraping:** A web scraping module fetches data from the [Fundamentus](https://www.fundamentus.com.br/resultado.php) website daily. This data is used to generate a ranking of assets, which aids in portfolio creation.
 
 - **User Authentication:** Users can create accounts, log in, and maintain sessions to access the app's features securely.
+
+  <img src="https://github.com/felipecacique/PortfolioBacktester/blob/main/img/login-page.png" />
 
 - **Database Integration:** The application integrates with a SQL database to store user data, portfolios, and other relevant information.
 
@@ -32,15 +38,16 @@ To run the Financial Portfolio Backtester locally, follow these steps:
 
 1. **Clone the Repository:** Clone this GitHub repository to your local machine.
 
-`git clone https://github.com/yourusername/financial-portfolio-backtester.git`
+
+- `git clone https://github.com/yourusername/financial-portfolio-backtester.git`
 
 2. **Set Up the Environment:** Install the required dependencies and configure the database connection.
 
 3. **Run the Application:** Start the Flask application, and access it through a web browser.
 
-`python app.py`
+- `python app.py`
 
-4. **Access the application:** Through your web browser at http://localhost:5000.
+4. **Access the application:** Through your web browser at `http://localhost:5000`.
 
 5. **User Registration:** Create a user account to access the backtesting and ranking features.
 
@@ -61,7 +68,7 @@ To run the Financial Portfolio Backtester locally, follow these steps:
 
 The project is structured as follows:
 
-- **app.py:** The main Flask application file. Contains the application routes and requests for both the Backend and Frontend.
+- **app.py:** The main Flask application file. Contains the application routes and requests for both the **Backend** and **Frontend**.
   
 ### Frontend:
   
@@ -88,9 +95,9 @@ The project is structured as follows:
 
 The application uses two primary data sources:
 
-1. **Varos Dataset:** A dataset provided by Varos containing fundamental financial indicators such as EBIT/EV and ROE for various financial assets.
+1. **Varos Dataset:** A dataset provided by [Varos](https://www.youtube.com/@varos-programacao) containing fundamental financial indicators such as EBIT/EV and ROE for various financial assets.
    
-2. **Fundamentus Web Scraping:** Daily web scraping of financial data from Fundamentus to obtain real-time information on assets.
+2. **Fundamentus Web Scraping:** Daily web scraping of financial data from [Fundamentus](https://www.fundamentus.com.br/resultado.php) to obtain real-time information on assets.
 
 ### Disclaimer:
 
@@ -104,9 +111,5 @@ Contributions to the Financial Asset Portfolio Backtester project are welcome! Y
 
 * This project was inspired by a bootcamp provided by Varos, a YouTube channel, which included the dataset and code to get started.
 
-* This project was made possible with the assistance of ChatGPT 3.5, which provided valuable guidance, generated code snippets, and offered helpful tips during the development process. We are grateful for the support and insights provided by this AI-powered model. Additionally, this README was created with the assistance of ChatGPT to provide comprehensive project documentation.
+* This project was made possible with the assistance of [ChatGPT 3.5](https://chat.openai.com/), which provided valuable guidance, generated code snippets, and offered helpful tips during the development process. We are grateful for the support and insights provided by this AI-powered model. Additionally, this README was created with the assistance of ChatGPT to provide comprehensive project documentation.
 
-
-## License
-
-This project is licensed under the MIT License.

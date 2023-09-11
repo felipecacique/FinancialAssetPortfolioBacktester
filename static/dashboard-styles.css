@@ -1,0 +1,61 @@
+/* Add your custom styling here */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* padding-top: 50px; */
+}
+
+.container {
+    margin-top:30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#portfolioChart, #timeSeriesChart {
+    max-width: 100%;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+.table {
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+/* Optional: Add some color to table rows on hover */
+.table tbody tr:hover {
+    background-color: #f2f2f2;
+}
+
+
+.text-input {
+   width: 50%;
+   padding: 6px 10px;
+   margin: 8px 0;
+   box-sizing: border-box;
+   border: 2px solid #007bff;
+   border-radius: 4px;
+}
+
+.row {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 8px 0;
+}
+
+/* Apply stykes tothe body element */
+body {
+    background-color: #f0f0f0;  /* Background color of the page */
+}
+
+/* Styling for the main container */
+.card{
+    background-color: white;   /* Background color of the container */
+    border-radius: 20px;  /* Rounded corners for rhe container */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);  /* Subtle shadow around the container */
+}
+
+
+

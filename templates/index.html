@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+    <title>Login Page</title>
+  </head>
+  <body>
+    <!-- Container for the login form-->
+    <div class="container">
+      <h1>Login</h1>
+      <!-- Form for user input -->
+      <form id="login-form">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required />
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required />
+        <button type="submit" id="login-button">Login</button>
+        <button type="button" id="register-button">Register</button>
+      </form>
+      <!-- Display error messages -->
+      <p id="error-message"></p>
+    </div>
+    <!-- Load JavaScript to handle form submission and registration -->
+    <script src="{{ url_for('static', filename='index-script.js') }}"></script>
+  </body>
+</html>

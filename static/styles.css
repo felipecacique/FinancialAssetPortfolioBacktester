@@ -1,0 +1,64 @@
+/* Apply stykes tothe body element */
+body {
+    margin: 0;  /* No margin around the body */
+    padding: 0;   /* No padding inside the body */
+    display: flex;  /* Use flexbox layout */
+    justify-content: center;  /* Center layout horizontally */
+    align-items: center;  /* Center content vertically */
+    min-height: 100vh;  /* Minimum height equal to viewport height */
+    background-color: #f0f0f0;  /* Background color of the page */
+}
+
+/* Styling for the main container */
+.container{
+    background-color: white;   /* Background color of the container */
+    border-radius: 8px;  /* Rounded corners for rhe container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Subtle shadow around the container */
+    padding: 20px;  /* Padding inside the container */
+    width: 300px;  /* Width of the container */
+    text-align: center;  /* Center text inside the container */
+}
+
+  /* Styling for the form */
+  form {
+    display: flex;  /* Use flexbox layout for the form elements */  
+    flex-direction: column;  /* Arrange elements vertically */
+    gap: 10px;  /* Gap between form elements */
+  }
+
+/* Styling for the button */
+button {
+    padding: 10px 20px;  /* Padding inside the button */
+    background-color: #0c0c0c;  /* Backgroun color of the button */
+    color: white;  /* Text color of the button */
+    border: none;  /* No border around the button */
+    border-radius: 4px;  /* Rounder corners for the button */
+    cursor: pointer;  /* Show pointer cursor on hover */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #1f1f1f;  /* Darker background color on hover */
+}
+
+/* New animation styles */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to the form container */
+register-form {
+    animation: fade-in 0.5s ease-in-out;
+}
+
+/* Apply animation to the form container */
+register-button {
+    animation: fade-in 0.5s ease-in-out;
+}

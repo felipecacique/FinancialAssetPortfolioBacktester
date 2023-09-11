@@ -14,7 +14,7 @@ This component of the application empowers users to perform backtests on financi
 
 <img src="https://github.com/felipecacique/PortfolioBacktester/blob/main/img/ranking-page.png" />
 
-The second component of the application excels in web scraping, extracting real-time financial data from fundamentus.com on a daily basis. Leveraging this timely data, the backend of the application dynamically generates a ranking system. This ranking system is then elegantly presented in a table format, showcasing the best assets to consider for investment. The criteria used in this ranking system are defined in Part 1. The top-ranked assets serve as the building blocks of the user's portfolio. Should the user desire to create new portfolios on a monthly basis, Part 2 equips them with the essential data and insights needed to make informed investment decisions.
+The second component of the application excels in web scraping, extracting real-time financial data from [Fundamentus](https://www.fundamentus.com.br/resultado.php) on a daily basis. Leveraging this timely data, the backend of the application dynamically generates a ranking system. This ranking system is then elegantly presented in a table format, showcasing the best assets to consider for investment. The criteria used in this ranking system are defined in Part 1. The top-ranked assets serve as the building blocks of the user's portfolio. Should the user desire to create new portfolios on a monthly basis, Part 2 equips them with the essential data and insights needed to make informed investment decisions.
 
 Together, these two parts offer a comprehensive solution for financial asset analysis and portfolio management, providing users with a powerful toolset to make data-driven investment choices.
 

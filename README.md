@@ -1,6 +1,6 @@
 # Financial Asset Portfolio Backtester
 
-Welcome to the **Financial Asset Portfolio Backtester** project! This **web application** allows users to **perform backtests** on stocks using a ranking system and fundamental indicators such as EBIT/EV and ROE. The core features of this application include generating new asset portfolios every month based on a provided dataset, creating a **ranking system** using fundamental indicators, and performing **web scraping** to gather data from a financial website. The project primarily focuses on **full-stack development**, incorporating technologies such as **HTML, CSS, JavaScript, Bootstrap, user authentication, database management, Python, Flask, and data visualization**.
+Welcome to the **Financial Asset Portfolio Backtester** project! This **web application** allows users to **perform backtests** on stocks using a ranking system and fundamental indicators such as EBIT/EV and ROIC. The core features of this application include generating new asset portfolios every month based on a provided dataset, creating a **ranking system** using fundamental indicators, and performing **web scraping** to gather data from a financial website. The project primarily focuses on **full-stack development**, incorporating technologies such as **HTML, CSS, JavaScript, Bootstrap, user authentication, database management, Python, Flask, and data visualization**.
 
 This project encompasses two core functionalities:
 
@@ -20,7 +20,7 @@ Together, these two parts offer a comprehensive solution for financial asset ana
 
 ## Project Overview
 
-- **Backtesting Engine:** The application leverages a provided dataset (date, asset, price, EBIT/EV, ROE) to create and manage portfolios. It calculates rankings using the fundamental indicators and selects the top assets to form a portfolio.
+- **Backtesting Engine:** The application leverages a provided dataset (date, asset, price, EBIT/EV, ROIC) to create and manage portfolios. It calculates rankings using the fundamental indicators and selects the top assets to form a portfolio.
 
 - **Web Scraping:** A web scraping module fetches data from the [Fundamentus](https://www.fundamentus.com.br/resultado.php) website daily. This data is used to generate a ranking of assets, which aids in portfolio creation.
 
@@ -95,7 +95,7 @@ The project is structured as follows:
 
 The application uses two primary data sources:
 
-1. **Varos Dataset:** A dataset provided by [Varos](https://www.youtube.com/@varos-programacao) containing fundamental financial indicators such as EBIT/EV and ROE for various financial assets.
+1. **Varos Dataset:** A dataset provided by [Varos](https://www.youtube.com/@varos-programacao) containing fundamental financial indicators such as EBIT/EV and ROIC for various financial assets.
    
 2. **Fundamentus Web Scraping:** Daily web scraping of financial data from [Fundamentus](https://www.fundamentus.com.br/resultado.php) to obtain real-time information on assets.
 

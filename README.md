@@ -1,6 +1,6 @@
 # Financial Asset Portfolio Backtester
 
-Welcome to the Financial Asset Portfolio Backtester project! This web application allows users to perform backtests on stocks using a ranking system and fundamental indicators such as EBIT/EV and ROE. The core features of this application include generating new asset portfolios every month based on a provided dataset, creating a ranking system using fundamental indicators, and performing web scraping to gather data from a financial website. The project primarily focuses on full-stack development, incorporating technologies such as HTML, CSS, JavaScript, Bootstrap, user authentication, database management, Python, Flask, and data visualization.
+Welcome to the **Financial Asset Portfolio Backtester** project! This **web application** allows users to **perform backtests** on stocks using a ranking system and fundamental indicators such as EBIT/EV and ROE. The core features of this application include generating new asset portfolios every month based on a provided dataset, creating a **ranking system** using fundamental indicators, and performing **web scraping** to gather data from a financial website. The project primarily focuses on **full-stack development**, incorporating technologies such as **HTML, CSS, JavaScript, Bootstrap, user authentication, database management, Python, Flask, and data visualization**.
 
 This project encompasses two core functionalities:
 

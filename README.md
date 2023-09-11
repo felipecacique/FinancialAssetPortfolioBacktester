@@ -15,6 +15,7 @@ The second component of the application excels in web scraping, extracting real-
 Together, these two parts offer a comprehensive solution for financial asset analysis and portfolio management, providing users with a powerful toolset to make data-driven investment choices.
 
 ## Project Overview
+
 - **Backtesting Engine:** The application leverages a provided dataset (date, asset, price, EBIT/EV, ROE) to create and manage portfolios. It calculates rankings using the fundamental indicators and selects the top assets to form a portfolio.
 
 - **Web Scraping:** A web scraping module fetches data from the website fundamentus.com daily. This data is used to generate a ranking of assets, which aids in portfolio creation.
@@ -31,13 +32,13 @@ To run the Financial Portfolio Backtester locally, follow these steps:
 
 1. **Clone the Repository:** Clone this GitHub repository to your local machine.
 
-git clone https://github.com/yourusername/financial-portfolio-backtester.git
+`git clone https://github.com/yourusername/financial-portfolio-backtester.git`
 
 2. **Set Up the Environment:** Install the required dependencies and configure the database connection.
 
 3. **Run the Application:** Start the Flask application, and access it through a web browser.
 
-python app.py
+`python app.py`
 
 4. **Access the application:** Through your web browser at http://localhost:5000.
 
@@ -50,7 +51,7 @@ python app.py
 ## Technologies Used
 - **Frontend:** HTML, CSS, JavaScript, Bootstrap
 - **Backend:** Python, Flask
-- **Database:** SQL (configured with Flask-SQLAlchemy)
+- **Database:** SQL (configured with SQLite)
 - **Data Visualization:** Chart.js
 - **Web Scraping:** BeautifulSoup
 - **User Authentication:** Flask-Login
@@ -60,16 +61,26 @@ python app.py
 
 The project is structured as follows:
 
-- **app.py:** The main Flask application file. Contains the application routes and requests.
+- **app.py:** The main Flask application file. Contains the application routes and requests for both the Backend and Frontend.
+  
+### Frontend:
+  
 - **templates/:** HTML templates for rendering web pages.
 - **templates/index.html:** Defines forms for user registration and login.
 - **templates/dashboard.html:** Create the dashboard page, containing a sidebar navigation, parameters form, buttons, charts, and table.
 - **static/:** Static assets (CSS, JavaScript, images).
+- **static/index-script.js:** JavaScript functionality of the login page.
+- **static/dashboard-script.js:** JavaScript functionality of the dashboard page.
+- **static/styles.css:** Define the visual styles and layout of a web page.
+
+### Backend: 
 
 - **CriandoUmModeloDeInvestimento.py:** Performs backtesting of a monthly generated stock portfolio based on financial indicators and ranking system.
 - **PegarSitesEmSitesAutomatizarCarteira.py:** Web scraping module to collect financial data and create a ranking.
 - **database.sqlite:** Defines the user database using SQL-Lite.
 - **tabela.pickle:** Stores the fundamentus.com data.
+- **dados_empresa.csv:** Historical dataset with date, asset, price, and financial indicators provided by Varos.
+- **ibov.csv:** Ibov historical data.
 
 
 

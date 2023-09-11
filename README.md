@@ -39,7 +39,7 @@ To run the Financial Portfolio Backtester locally, follow these steps:
 1. **Clone the Repository:** Clone this GitHub repository to your local machine.
 
 
-- `git clone https://github.com/yourusername/financial-portfolio-backtester.git`
+- `https://github.com/yourusername/FinancialAssetPortfolioBacktester.git`
 
 2. **Set Up the Environment:** Install the required dependencies and configure the database connection.
 

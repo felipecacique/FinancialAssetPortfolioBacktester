@@ -39,13 +39,13 @@ To run the Financial Portfolio Backtester locally, follow these steps:
 1. **Clone the Repository:** Clone this GitHub repository to your local machine.
 
 
-- `https://github.com/yourusername/FinancialAssetPortfolioBacktester.git`
+-- `https://github.com/yourusername/FinancialAssetPortfolioBacktester.git`
 
 2. **Set Up the Environment:** Install the required dependencies and configure the database connection.
 
 3. **Run the Application:** Start the Flask application, and access it through a web browser.
 
-- `python app.py`
+-- `python app.py`
 
 4. **Access the application:** Through your web browser at `http://localhost:5000`.
 

@@ -111,5 +111,5 @@ This project is intended for educational and learning purposes only. The financi
 
 ## Deployment
 
-You can try our app on [https://wood-lemon-clam.glitch.me](https://wood-lemon-clam.glitch.me). Not all features are fuctional in this [Glitch](https://glitch.com/) free web server, such as registering a new user and doing the web-scraping with selenium. For a better experience, open it on the desktop.
+You can try our app on [https://wood-lemon-clam.glitch.me](https://wood-lemon-clam.glitch.me). Not all features are fuctional in this [Glitch](https://glitch.com/) free web server, such as registering a new user and doing the web-scraping with selenium. The login username is "user" and the password is "123456". For a better experience, open it on the desktop.
 

@@ -109,3 +109,7 @@ This project is intended for educational and learning purposes only. The financi
 
 * This project was made possible with the assistance of [ChatGPT 3.5](https://chat.openai.com/), which provided valuable guidance, generated code snippets, and offered helpful tips during the development process. We are grateful for the support and insights provided by this AI-powered model. Additionally, this README was created with the assistance of ChatGPT to provide comprehensive project documentation.
 
+## Deployment
+
+You can try our app on [https://wood-lemon-clam.glitch.me](https://wood-lemon-clam.glitch.me). Not all features are fuctional in this [Glitch](https://glitch.com/) free web server, such as registering a new user and doing the web-scraping with selenium. For a better experience, open it on the desktop.
+
